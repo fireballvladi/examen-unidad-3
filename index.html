@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="Juego.css" type="text/css" />
+        <title>Batalla Naval</title>
+    </head>
+    <body>
+        <center>
+        <h1>Batalla Naval</h1>
+        <h3>Coloca la posicion de las naves</h3>
+        <h4>Instrucciones del juego:</h4>
+        </center>
+        <h5>
+            1. Para comenzar el juego se debe seleccionar las naves e irlas colocando ya sea horizontal o vertical
+            <br>
+            2. Una vez seleccionado debe dar clic en la posicion deseada que deseea el blarco y dar clic en el tablero para poderlo agregar.
+            <br>
+            3. Una vez finalizada la agrupacion de naves se depliega el tablero del contrincante.
+            <br>
+            4. Seleccionar una seccion del tablero para poder atacar al contrincante.
+            <br>
+                4.1- Si se acerto a una nave enemiga nos mostrara una notificacion de acertastes y volveras a disparar.
+                <br>
+                4.2- En caso de no acertar nos mostrara una notificacion de fallaste.
+                <br>
+            5. Ya concluido con el juego nos mostrara una notificacion de ganaste o perdiste la partida
+            <br>
+        </h5>
+        </br>
+        </br>
+        <div class="contnedor">
+            <div class="row">
+                <div class="col">
+                    <div id="board">
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="boardAttack">
+                    </div>
+                </div>
+            </div>
+            <h4>Tus naves:</h4>
+            <div id="ships" class="row">
+                <div class="col"> 
+                    <div>
+                        <span>Portaviones</span></br>
+                        <img src="b1.jpeg" alt="Trulli" width="100" height="70"></br>
+                        <span>Tamaño: 5</span>
+                    </div>
+                    <div class="position"></div>
+                </div>
+                <div class="col"> 
+                    <div>
+                        <span>Acorazado</span></br>
+                        <img src="b1.jpeg" alt="Trulli" width="100" height="70"></br>
+                        <span>Tamaño: 4</span>
+                    </div>
+                    <div class="position"></div>
+                </div>
+                <div class="col"> 
+                    <div>
+                        <span>Submarino</span></br>
+                        <img src="b1.jpeg" alt="Trulli" width="100" height="70"></br>
+                        <span>Tamaño: 3</span>
+                    </div>
+                    <div class="position"></div>
+                </div>
+                <div class="col"> 
+                    <div>
+                        <span>Destructor</span></br>
+                        <img src="b1.jpeg" alt="Trulli" width="100" height="70"></br>
+                        <span>Tamaño: 2</span>
+                    </div>
+                    <div class="position"></div>
+                </div>           
+            </div>
+            <div class="row">
+                <button id="button" onclick="startGame()">Empezar juego</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="Batalla.js"></script>
+    </body>
+</html>

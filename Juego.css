@@ -1,0 +1,41 @@
+body{
+    background-image: url("2fd828c7-1241-4dd6-8202-5fcbc8f9e2dc.jfif");
+    background-color: rgb(255, 255, 255);
+}
+#board{
+    width: 300px;
+    height: 300px;
+}
+.myRow{
+    width: 300px;
+    height: 30px;
+}
+.grid{
+    width: 30px;
+    height: 30px;
+    border: black 1.5px solid;
+    display: inline-block
+}
+.position{
+    display: inline-block;
+}
+.horizontal{
+    width: 35px;
+    height: 15px;
+    border: black 1.5px solid;
+}
+.vertical{
+    width: 15px;
+    height: 35px;
+    border: black 1.5px solid;
+    margin-top: 5px;
+}
+.selected{
+    background-color: rgb(98, 104, 104);
+}
+.hit{
+    background-color: rgb(255, 0, 0);
+}
+.miss{
+    background-color: rgb(0, 0, 0);
+}
